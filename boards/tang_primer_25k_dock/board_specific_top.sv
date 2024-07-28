@@ -126,7 +126,11 @@ module board_specific_top
         .hsync     ( hsync      ),
 
         .display_on (display_on),
+<<<<<<< HEAD
         .pixel_clk  (clk_px),
+=======
+        .pixel_clk  (pixel_clk),
+>>>>>>> b0a0c35710ac5178539e7c9f3513d395b6104e17
 
         .red       ( red        ),
         .green     ( green      ),
@@ -239,6 +243,7 @@ module board_specific_top
         .O_tmds_data_n  (   tmds_data_n )
     );
 
+<<<<<<< HEAD
     // assign led [0] = display_on; ALL inputs are toggling
     // assign led [1] = vsync;
     // assign led [2] = hsync;
@@ -255,6 +260,8 @@ always @(posedge clk_hdl) begin
      cnt_100 <= 1'b1;
 
 end
+=======
+>>>>>>> b0a0c35710ac5178539e7c9f3513d395b6104e17
     //`endif
 
     //------------------------------------------------------------------------
